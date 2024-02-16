@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/icon.dart';
+import 'package:hello_world/invisibleWidget/gridView.dart';
 
+//nambahin import dari home:
 void main() {
   runApp(MyApp());
 }
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
     //nah kan, misal home: ==> mageProvider() ini bakal dipanggil dan memunculkan
     //isian page imageProvider yang berisi widget
 
-    return MaterialApp(debugShowCheckedModeBanner: false, home: icon()
+    return MaterialApp(debugShowCheckedModeBanner: false, home: grid()
+
         //hubungan MaterialApp,Home, Scaffold, dan AppBar
         //materialapp itu buat manggil class misal class imageprovider, nah itu
         //pake parameter home: , nah salah satu class lain yang bisa diambil
@@ -27,39 +29,10 @@ class MyApp extends StatelessWidget {
         //1. assetImage()
         //2. networkImage()
         //3. icon()
+        //4. buttonKlik()
+        //5. logo()
+        //6. helloWorld()
 
-        //latihan button klik
-        // body: Center(
-        //     child: ElevatedButton(
-        //   onPressed: () {
-        //     print("KLIK");
-        //   },
-        //   child: Text("KLIK SAYA"),
-        // ) //center
-        // ) //scaffold
-
-        //latihan flutter logo
-        // body: Center(
-        //   child: FlutterLogo(
-        //     size: 200,
-        //   ), //center
-        // ) //scaffold
-
-        //latihan hello world
-        //   Center(
-        //       //widget
-        //       child: Container(
-        //     //parameter child itu buat nentuin widget mana (yaitu si container) yang bakal diketengahin oleh widget (center)
-        //     width: 200,
-        //     height: 300,
-        //     color: Colors.purple,
-        //     child: Center(
-        //       child: Text("Hello Fanny jelek!"),
-        //     ),
-        //   )
-        //       //child: Text("Hello Fanny Jelek"),
-        //       ), //center
-        // ), //scaffold
         );
   } //widget build
 } //stateless widget
