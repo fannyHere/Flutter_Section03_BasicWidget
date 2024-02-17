@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:hello_world/invisibleWidget/gridView.dart';
-
 //nambahin import dari home:
+import 'package:flutter/material.dart';
+import 'package:hello_world/extractWidget.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     //nah kan, misal home: ==> mageProvider() ini bakal dipanggil dan memunculkan
     //isian page imageProvider yang berisi widget
 
-    return MaterialApp(debugShowCheckedModeBanner: false, home: grid()
+    return MaterialApp(debugShowCheckedModeBanner: false, home: ExtractWidget()
 
         //hubungan MaterialApp,Home, Scaffold, dan AppBar
         //materialapp itu buat manggil class misal class imageprovider, nah itu
