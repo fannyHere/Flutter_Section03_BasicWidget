@@ -1,6 +1,6 @@
 //nambahin import dari home:
 import 'package:flutter/material.dart';
-import 'package:hello_world/06.%20widgetBuilder/gridViewBuilder.dart';
+import 'package:hello_world/07.%20latihanFlutterBasic/main_1.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     //isian page imageProvider yang berisi widget
 
     return MaterialApp(
-        debugShowCheckedModeBanner: false, home: gridViewBuilder()
+        debugShowCheckedModeBanner: false, home: latihanFlutterBasic()
 
         //hubungan MaterialApp,Home, Scaffold, dan AppBar
         //materialapp itu buat manggil class misal class imageprovider, nah itu

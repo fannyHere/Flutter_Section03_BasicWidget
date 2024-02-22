@@ -4,8 +4,23 @@ import 'package:flutter/material.dart';
 
 AppBar appbar() {
   return AppBar(
-    centerTitle: true,
+    leading: FlutterLogo(
+      //buat naro foto di sebelah kiri
+      size: 20, //ga ngaruh
+    ),
     backgroundColor: Colors.purple,
-    title: Text('CONTOH'),
+    centerTitle: false,
+    title: Text('Semangat Fanny :>'),
+    actions: [
+      //ada di sebelah kanan appbar
+      IconButton(
+        //kumpulan icon button
+        onPressed: () {
+          //pas diklik muncul keyword klik more
+          print("KLIK MORE");
+        },
+        icon: Icon(Icons.more_vert), //nambahin icon more titik 3 vert
+      ),
+    ], //actions
   );
 }
