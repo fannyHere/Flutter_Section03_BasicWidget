@@ -28,7 +28,7 @@ class Soal_22 extends StatelessWidget {
                 borderRadius: BorderRadius.circular(200 / 2),
                 border: Border.all(
                     color: const Color.fromARGB(255, 251, 252, 252),
-                    width: 10), //buat namahin border
+                    width: 10), //buat namahin ketebalan border
                 color: Colors.black12,
                 image: DecorationImage(
                     fit: BoxFit.cover,
